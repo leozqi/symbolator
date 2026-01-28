@@ -28,7 +28,7 @@ Homepage = "https://kevinpt.github.io/symbolator"
 Issues = "https://github.com/kevinpt/symbolator/issues"
 
 [project.scripts]
-symbolator = "symbolator"
+symbolator = "symbolator:main"
   
 [build-system]
 requires = ["setuptools >= 77.0.3"]
