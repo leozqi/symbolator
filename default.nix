@@ -40,7 +40,7 @@ python3Packages.buildPythonApplication rec {
     owner = "leozqi";
     repo = "symbolator";
     rev = "1.0.2";
-    hash = "sha256-T9liGr5ZxCaoYjkmTvz9tAszOMJLnYRpCDhDEMozOFk=";
+    hash = "sha256-DmoDpymGHPwNZmUg1iss6cKLJ7gVekVAuIVSnNZyngE="; # always clear hash and rebuild to update hash when tag changes
   };
 
   build-system = with python3Packages; [ setuptools ];
