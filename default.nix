@@ -3,6 +3,7 @@
 {
   lib,
   python3Packages,
+  pkgs,
   fetchFromGitHub
 }:
 
@@ -35,17 +36,17 @@ python3Packages.buildPythonApplication rec {
 
     dependencies = [];
   };
+
+  
   
   src = fetchFromGitHub {
     owner = "leozqi";
     repo = "symbolator";
     rev = "1.0.2";
-    hash = "sha256-DmoDpymGHPwNZmUg1iss6cKLJ7gVekVAuIVSnNZyngE="; # always clear hash and rebuild to update hash when tag changes
+    hash = "sha256-4kpBvkK0/SXniCPTdaJsAQjut/AO6wi7r9rcQpxtOMw="; # always clear hash and rebuild to update hash when tag changes
   };
 
   build-system = with python3Packages; [ setuptools ];
-
-  dependencies = with python3Packages; [
-    hdlparse
-  ];
+  buildInputs = with pkgs; [ cairo gtk3 ];
+  dependencies = with python3Packages; [ hdlparse pycairo pygobject3 ];
 }
