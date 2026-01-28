@@ -11,7 +11,7 @@ from .nucanvas import DrawStyle, NuCanvas
 from .nucanvas.cairo_backend import CairoSurface
 from .nucanvas.svg_backend import SvgSurface
 from .nucanvas.shapes import PathShape, OvalShape
-from .nucanvas.color import sinebow
+from .nucanvas.color.sinebow import sinebow
 
 import hdlparse.vhdl_parser as vhdl
 import hdlparse.verilog_parser as vlog
