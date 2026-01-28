@@ -1,0 +1,35 @@
+[project]
+name = "symbolator"
+version = "1.0.2"
+authors = [
+  { name="Kevin Thibedeau", email="kevin.thibedeau@gmail.com" },
+]
+description = "HDL parser"
+readme = "README.rst"
+requires-python = ">=3.9"
+classifiers=[
+  'Development Status :: 5 - Production/Stable',
+  'Operating System :: OS Independent',
+  'Intended Audience :: Developers',
+  'Topic :: Multimedia :: Graphics',
+  'Topic :: Software Development :: Documentation',
+  'Natural Language :: English',
+  'Programming Language :: Python :: 3'
+]
+dependencies = [
+  "hdlparse>=1.0.5"
+]
+
+license = "MIT"
+license-files = ["LICEN[CS]E"]
+
+[project.urls]
+Homepage = "https://kevinpt.github.io/symbolator"
+Issues = "https://github.com/kevinpt/symbolator/issues"
+
+[project.scripts]
+symbolator = "symbolator:main"
+  
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
