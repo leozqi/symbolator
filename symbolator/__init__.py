@@ -6,11 +6,11 @@
 
 import sys, copy, re, argparse, os, errno
 
-from .nucanvas import DrawStyle, NuCanvas
-from .nucanvas.cairo_backend import CairoSurface
-from .nucanvas.svg_backend import SvgSurface
-from .nucanvas.shapes import PathShape, OvalShape
-import .nucanvas.color.sinebow as sinebow
+from nucanvas import DrawStyle, NuCanvas
+from nucanvas.cairo_backend import CairoSurface
+from nucanvas.svg_backend import SvgSurface
+from nucanvas.shapes import PathShape, OvalShape
+import nucanvas.color.sinebow as sinebow
 
 import hdlparse.vhdl_parser as vhdl
 import hdlparse.verilog_parser as vlog
